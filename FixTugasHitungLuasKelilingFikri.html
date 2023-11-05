@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Luas dan Keliling</title>
+    <link rel="stylesheet" type="text/css" href="FixTugasHitungLuasKelilingFikri.css">
+    <script src="FixTugasHitungLuasKelilingFikri.js"></script>
+</head>
+<body>
+    <h1>Kalkulator Luas dan Keliling</h1>
+    <div class="menu">
+        <button onclick="showSquare()">Persegi Panjang</button>
+        <button onclick="showTriangle()">Segitiga</button>
+        <button onclick="showCircle()">Lingkaran</button>
+    </div>
+    <div class="calculator" id="square">
+        <h2>Persegi Panjang</h2>
+        Panjang: <input type="number" id="length"><br>
+        Lebar: <input type="number" id="width"><br>
+        <button onclick="calculateRectangle()">Hitung</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
+        <p>Luas: <span id="rectangleArea"></span></p>
+        <p>Keliling: <span id="rectanglePerimeter"></span></p>
+    </div>
+    <div class="calculator" id="triangle">
+        <h2>Segitiga</h2>
+        Alas: <input type="number" id="base"><br>
+        Tinggi: <input type="number" id="height"><br>
+        Sisi A: <input type="number" id="sideA"><br>
+        Sisi B: <input type="number" id="sideB"><br>
+        Sisi C: <input type="number" id="sideC"><br>
+        <button onclick="calculateTriangle()">Hitung</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
+        <p>Luas: <span id="triangleArea"></span></p>
+        <p>Keliling: <span id="trianglePerimeter"></span></p>
+    </div>
+    <div class="calculator" id="circle">
+        <h2>Lingkaran</h2>
+        Jari-jari: <input type="number" id="radius"><br>
+        <button onclick="calculateCircle()">Hitung</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
+        <p>Luas: <span id="circleArea"></span></p>
+        <p>Keliling: <span id="circlePerimeter"></span></p>
+    </div>
+</body>
+</html>
